@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Agrinorm Assignment - Task Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For this assignment, you will be implementing a new UI so that our customers can more easily manage their work.\
+More specifically, our customers have two types of users:
+
+* **Quality Managers**: Responsible for creating new inspection tasks and assigning them to **Quality Inspectors**
+* **Quality Inspectors**: Responsible for performing quality inspections themselves.
+
+At this point, the backend has been provided for you so you will only need to worry about the frontend.\
+Your solution should fulfill the following requirements:
+* As a quality manager, I should be able to:
+    1. Create a new inspection ‘task’
+    2. Assign a ‘task’ to a quality inspector
+    3. Review ‘task’ assignments (i.e. which tasks have been assigned to which inspector)
+* As a quality inspector, I should be able to:
+    1. Review which tasks have been assigned to me
+    2. Change the status of a task. Tasks can be in one of three statuses: `TODO`, `IN_PROGRESS`, or `DONE`
 
 ## Available Scripts
 
-In the project directory, you can run:
+First run `npm i` to setup the project. Then within the project directory, you can run:
+
+### `npm run api`
+
+Starts the API on port `3001`. You should run this before running `npm start` so that the data and API endpoints are accessible.\
+This data is served from [json-server](https://www.npmjs.com/package/json-server) \
+and you can inspect the current DB data which the API serves by looking in the `db.json` file.
+
+The contents of `db.json` will change if you call `POST/PUT/DELETE` operations on the API.
+
+#### API Endpoints
+
+The API has three resources:
+
+1. /inspectors
+2. /orders
+3. /tasks
+
+Data can be read/written for each of these resources via standard REST operations.\
+
+**Examples**:
+* `curl -X 'GET' 'http://localhost:3001/inspectors'` returns a list containing all of the inspector information
+* `curl -X POST -H "Content-Type: application/json" -d '{"inspectorId": 3,"orderId": 4,"status": "TODO"}' "http://localhost:3001/tasks"` will create a new task for inspector 3 to inspect order 4
+
+#### Backup data
+
+The API is very simple and does very basic data validation (e.g. checking for duplicate IDs). If you accidentally add bad data to the DB, you can modify the data in `db.json` manually, or you can find a copy of the initial data in `db.json.bak`
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The page will reload if you make edits.
