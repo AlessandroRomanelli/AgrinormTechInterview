@@ -1,59 +1,59 @@
 {
-    "orders": [
-      {
-        "id": 1,
-        "numBoxes": 200,
-        "product": "Blueberries"
-      },
-      {
-        "id": 2,
-        "numBoxes": 10,
-        "product": "Mangos"
-      },
-      {
-        "id": 3,
-        "numBoxes": 75,
-        "product": "Blueberries"
-      },
-      {
-        "id": 4,
-        "numBoxes": 115,
-        "product": "Strawberries"
-      },
-      {
-        "id": 5,
-        "numBoxes": 425,
-        "product": "Strawberries"
-      },
-      {
-        "id": 6,
-        "numBoxes": 25,
-        "product": "Blueberries"
-      }
-    ],
-    "tasks": [
-      {
-        "id": 1,
-        "inspectorId": 2,
-        "orderId": 5,
-        "status": "TODO"
-      }
-    ],
-    "inspectors": [
-      {
-        "id": 1,
-        "type": "inspector",
-        "name": "Inspector A"
-      },
-      {
-        "id": 2,
-        "type": "inspector",
-        "name": "Inspector B"
-      },
-      {
-        "id": 3,
-        "type": "inspector",
-        "name": "Inspector C"
-      }
-    ]
-  }
+  "batches": [
+    {
+      "id": 1,
+      "numBoxes": 200,
+      "product": "Blueberries"
+    },
+    {
+      "id": 2,
+      "numBoxes": 10,
+      "product": "Mangos"
+    },
+    {
+      "id": 3,
+      "numBoxes": 75,
+      "product": "Blueberries"
+    },
+    {
+      "id": 4,
+      "numBoxes": 115,
+      "product": "Strawberries"
+    },
+    {
+      "id": 5,
+      "numBoxes": 425,
+      "product": "Strawberries"
+    },
+    {
+      "id": 6,
+      "numBoxes": 25,
+      "product": "Blueberries"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "inspectorId": 2,
+      "batchId": 5,
+      "status": "TODO"
+    }
+  ],
+  "inspectors": [
+    {
+      "id": 1,
+      "type": "inspector",
+      "name": "Inspector A"
+    },
+    {
+      "id": 2,
+      "type": "inspector",
+      "name": "Inspector B"
+    },
+    {
+      "id": 3,
+      "type": "inspector",
+      "name": "Inspector C"
+    }
+  ]
+}

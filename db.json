@@ -1,5 +1,5 @@
 {
-  "orders": [
+  "batches": [
     {
       "id": 1,
       "numBoxes": 200,
@@ -35,7 +35,7 @@
     {
       "id": 1,
       "inspectorId": 2,
-      "orderId": 5,
+      "batchId": 5,
       "status": "TODO"
     }
   ],
