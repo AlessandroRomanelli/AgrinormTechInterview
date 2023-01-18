@@ -3,32 +3,56 @@
     {
       "id": 1,
       "numBoxes": 200,
-      "product": "Blueberries"
+      "product": "Blueberries",
+      "variety": "Alba",
+      "arrivalTimestamp": "2022-12-18 22:03:16",
+      "latestInspectionTimestamp": "2022-12-20 09:52:35",
+      "latestQualityScore": "A"
     },
     {
       "id": 2,
       "numBoxes": 10,
-      "product": "Mangos"
+      "product": "Mangos",
+      "variety": "Alphonso",
+      "arrivalTimestamp": "2022-12-20 20:33:50",
+      "latestInspectionTimestamp": "2022-12-21 11:17:03",
+      "latestQualityScore": "B"
     },
     {
       "id": 3,
       "numBoxes": 75,
-      "product": "Blueberries"
+      "product": "Blueberries",
+      "variety": "Magica",
+      "arrivalTimestamp": "2022-12-22 22:33:08",
+      "latestInspectionTimestamp": "2022-12-25 12:51:54",
+      "latestQualityScore": "D"
     },
     {
       "id": 4,
       "numBoxes": 115,
-      "product": "Strawberries"
+      "product": "Strawberries",
+      "variety": "Amelia",
+      "arrivalTimestamp": "2022-12-26 03:50:51",
+      "latestInspectionTimestamp": "2022-12-26 23:04:02",
+      "latestQualityScore": "A"
     },
     {
       "id": 5,
       "numBoxes": 425,
-      "product": "Strawberries"
+      "product": "Strawberries",
+      "variety": "Elvira",
+      "arrivalTimestamp": "2022-12-27 21:54:20",
+      "latestInspectionTimestamp": "2022-12-29 18:29:14",
+      "latestQualityScore": "C"
     },
     {
       "id": 6,
       "numBoxes": 25,
-      "product": "Blueberries"
+      "product": "Blueberries",
+      "variety": "Alba",
+      "arrivalTimestamp": "2022-12-31 01:55:19",
+      "latestInspectionTimestamp": "2023-01-02 08:39:23",
+      "latestQualityScore": "B"
     }
   ],
   "tasks": [
