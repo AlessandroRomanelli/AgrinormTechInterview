@@ -1,0 +1,38 @@
+.task-creator .inspector-list-item {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.task-creator .inspector-list-item img {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #333;
+}
+
+.task-creator .suggestions {
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    margin-top: 0.5rem;
+    background: white;
+}
+
+.task-creator .suggestions div.inspector-list-item {
+    padding: 0.1rem 0.25rem;
+    border-radius: 2px;
+}
+
+.task-creator .suggestions div.inspector-list-item:nth-child(2n) {
+    background: #fafafa;
+}
+
+.task-creator .suggestions div.inspector-list-item:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.task-creator input.form-control:focus ~ .suggestions {
+    height: 130px;
+}

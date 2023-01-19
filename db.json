@@ -2,21 +2,21 @@
   "batches": [
     {
       "id": 1,
-      "numBoxes": 200,
+      "numBoxes": 150,
       "product": "Blueberries",
       "variety": "Alba",
-      "arrivalTimestamp": "2022-12-18 22:03:16",
-      "latestInspectionTimestamp": "2022-12-20 09:52:35",
+      "arrivalTimestamp": "2022-12-18T21:03:16.000Z",
+      "latestInspectionTimestamp": "2023-01-18T18:43:19.323Z",
       "latestQualityScore": "A"
     },
     {
       "id": 2,
-      "numBoxes": 10,
+      "numBoxes": 15,
       "product": "Mangos",
       "variety": "Alphonso",
-      "arrivalTimestamp": "2022-12-20 20:33:50",
-      "latestInspectionTimestamp": "2022-12-21 11:17:03",
-      "latestQualityScore": "B"
+      "arrivalTimestamp": "2022-12-20T19:33:50.000Z",
+      "latestInspectionTimestamp": "2023-01-18T18:20:43.007Z",
+      "latestQualityScore": "C"
     },
     {
       "id": 3,
@@ -59,8 +59,26 @@
     {
       "id": 1,
       "inspectorId": 2,
-      "batchId": 5,
+      "batchId": 2,
+      "status": "DONE"
+    },
+    {
+      "inspectorId": 121,
+      "batchId": 3,
+      "status": "TODO",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "inspectorId": 2,
+      "batchId": 3,
       "status": "TODO"
+    },
+    {
+      "id": 5,
+      "inspectorId": 2,
+      "batchId": 1,
+      "status": "DONE"
     }
   ],
   "inspectors": [
@@ -78,6 +96,16 @@
       "id": 3,
       "type": "inspector",
       "name": "Inspector C"
+    },
+    {
+      "id": 121,
+      "type": "inspector",
+      "name": "Inspector D"
+    },
+    {
+      "id": 321,
+      "type": "inspector",
+      "name": "Inspector E"
     }
   ]
 }

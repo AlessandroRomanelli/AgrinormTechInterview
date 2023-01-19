@@ -1,0 +1,87 @@
+.tasks-table td {
+    position: relative;
+    vertical-align: middle;
+}
+
+.datetime-ago {
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+    font-size: 0.9rem;
+}
+
+.datetime-ago small {
+    font-size: 0.8em;
+}
+
+.inspectors header h1 {
+    display: inline-block;
+    margin-right: 0.5rem
+}
+
+table.tasks-table {
+    margin-top: 1rem;
+}
+
+table.tasks-table td .quality {
+    color: #FFD700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #D4AF37;
+}
+
+table.tasks-table td.status::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+    background: transparent;
+    z-index: -1;
+}
+
+table.tasks-table td.status.done::before {
+    background: #57E66F;
+}
+table.tasks-table td.status.todo::before {
+    background: #E6B425;
+}
+table.tasks-table td.status.in_progress::before {
+    background: #ccc;
+}
+
+table.tasks-table thead tr:hover {
+    cursor: pointer;
+}
+
+table.tasks-table td .actions {
+    display: flex;
+    gap: 0.25rem;
+}
+
+table.tasks-table td .actions button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-editor .quality-rating {
+    display: flex;
+    justify-content: center;
+}
+
+.task-editor .rating-star {
+    font-size: 3rem;
+    transition: 0.1s ease-in-out;
+}
+
+.task-editor .rating-star:hover {
+    cursor: pointer;
+}
+
+.task-editor .rating-star.active {
+    color: #E6B425;
+}
