@@ -113,7 +113,7 @@ const TasksVisualizer: React.FC<TasksVisualizerProps> = ({tasks, setTasks, sortB
 				setTaskEdited={setTaskEdited}
 			/>}
 		{filteredTasks.length === 0 && <p className={"text-muted"}>No tasks are matching the search filter</p>}
-		{taskEdited && taskEdited.batch && <TaskEditor isManager taskEdited={taskEdited} setTaskEdited={setTaskEdited} refreshTasks={refreshTasks}/>}
+		{taskEdited && taskEdited.batch && <TaskEditor isManager={isManager} taskEdited={taskEdited} setTaskEdited={setTaskEdited} refreshTasks={refreshTasks}/>}
 	</>
 }
 
